@@ -12,4 +12,10 @@
         android:icon="@drawable/ic_note_add_black_24dp"
         android:title="Memo"
         android:iconTint="@color/design_default_color_primary_dark"/>
+
+    <item
+        android:id="@+id/menu4"
+        android:icon="@drawable/ic_person_black_24dp"
+        android:title="Account"
+        android:iconTint="@color/design_default_color_primary_dark"/>
 </menu>

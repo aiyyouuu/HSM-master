@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".View.SignUpActivity">
+
+    <TextView
+        android:id="@+id/editteks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:layout_below="@id/foto"
+        android:textSize="30sp"
+        android:text="SIGN UP"/>
+
+    <TextView
+        android:id="@+id/namaasp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editteks"
+        android:text="Nama :"
+        android:layout_marginLeft="95dp" />
+
+    <EditText
+        android:id="@+id/isinamasp"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/namaasp"
+        android:layout_centerInParent="true"
+        android:hint="Nama" />
+
+    <TextView
+        android:id="@+id/emailsp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/isinamasp"
+        android:text="Email :"
+        android:layout_marginLeft="95dp" />
+
+    <EditText
+        android:id="@+id/isiesp"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/emailsp"
+        android:layout_centerInParent="true"
+        android:hint="Email" />
+    <TextView
+        android:id="@+id/passsp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/isiesp"
+        android:text="Password :"
+        android:layout_marginLeft="95dp" />
+
+    <EditText
+        android:id="@+id/isipsp"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/passsp"
+        android:layout_centerInParent="true"
+        android:hint="Password"
+        android:inputType="textPassword"/>
+
+    <Button
+        android:id="@+id/savesp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/isipsp"
+        android:text="SAVE"
+        android:layout_toRightOf="@id/cancelsp"
+        android:layout_marginLeft="30dp" />
+
+    <Button
+        android:id="@+id/cancelsp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/isipsp"
+        android:text="CANCEL"
+        android:layout_marginLeft="90dp" />
+
+</RelativeLayout>

@@ -1,10 +1,7 @@
 <resources>
-    <string name="radio_indo">Indonesia</string>
     <string name="radio_us">United States</string>
-
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="HS">Holiday Schedule</string>
-
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="login_preference">task.project.PostMemeSpammer3_login_preference</string>
+    <string name="login_status_preference">task.project.PostMemeSpammer3_login_status_preference</string>
 </resources>

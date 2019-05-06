@@ -12,11 +12,14 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 public class BaseApp extends Application {
     public static ApiService service;
+    public static ApiLogin loginService;
     private String BASE_URL = "https://holidayapi.pl";
+    private String BASE_URL2 = "https://yutub-api.herokuapp.com";
     @Override
     public void onCreate() {
         super.onCreate();
         service = getRetrofit().create(ApiService.class);
+        loginService = getRetrofit2().create(ApiLogin.class);
     }
     private Retrofit getRetrofit() {
         return new Retrofit.Builder()
@@ -25,6 +28,15 @@ public class BaseApp extends Application {
                 .client(getHttpClient())
                 .build();
     }
+
+    private Retrofit getRetrofit2() {
+        return new Retrofit.Builder()
+                .baseUrl(BASE_URL2)
+                .addConverterFactory(GsonConverterFactory.create())
+                .client(getHttpClient())
+                .build();
+    }
+
     private OkHttpClient getHttpClient() {
         return new OkHttpClient.Builder()
                 .addInterceptor(getHttpLogInterceptor())
