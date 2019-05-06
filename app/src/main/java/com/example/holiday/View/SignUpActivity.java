@@ -28,6 +28,12 @@ public class SignUpActivity extends AppCompatActivity implements RegisView {
         passw = findViewById(R.id.isipsp);
         simpan = findViewById(R.id.savesp);
         kembali = findViewById(R.id.cancelsp);
+        kembali.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext(), LoginActivity.class));
+            }
+        });
 
         regisPresenter = new RegisPresenter(getApplicationContext(),this);
         simpan.setOnClickListener(new View.OnClickListener() {

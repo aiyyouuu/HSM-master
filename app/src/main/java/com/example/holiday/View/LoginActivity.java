@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
@@ -17,6 +18,7 @@ public class LoginActivity extends AppCompatActivity implements LoginView {
     private sharedpreference preferenceconfig;
     private EditText Username, UserPassword;
     private LoginPresenter loginPresenter;
+    private Button btnSign;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,6 +29,13 @@ public class LoginActivity extends AppCompatActivity implements LoginView {
         preferenceconfig = new sharedpreference(getApplicationContext());
         Username = findViewById(R.id.user_name);
         UserPassword = findViewById(R.id.user_password);
+        btnSign = findViewById(R.id.btn_sign);
+        btnSign.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext(),SignUpActivity.class));
+            }
+        });
 
         if (preferenceconfig.readLoginStatus()) {
             startActivity(new Intent(this, TodayActivityUS.class));
