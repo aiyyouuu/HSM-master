@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/menu2"
+        android:icon="@drawable/ic_class_black_24dp"
+        android:title="All Appoinments"
+        android:iconTint="@color/design_default_color_primary_dark"/>
+
+    <item
+        android:id="@+id/menu3"
+        android:icon="@drawable/ic_note_add_black_24dp"
+        android:title="Memo"
+        android:iconTint="@color/design_default_color_primary_dark"/>
+</menu>

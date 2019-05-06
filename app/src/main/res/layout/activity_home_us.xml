@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    android:orientation="vertical"
+    android:background="#ADD8E6">
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <TextView
+            android:id="@+id/tv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/radio_us"
+            android:textStyle="bold"
+            android:textColor="#2F4F4F"
+            android:textSize="15dp"
+            android:layout_marginTop="20sp"
+            android:layout_marginBottom="15sp"/>
+
+        <com.prolificinteractive.materialcalendarview.MaterialCalendarView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/calendarView"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_marginTop="30sp"
+            android:layout_centerInParent="true"
+            app:mcv_showOtherDates="all"
+            app:mcv_selectionColor="#00F"
+            />
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/btn_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ADD MEMO"
+        android:textStyle="bold"
+        android:layout_below="@id/container"
+        android:layout_marginTop="60sp"
+        android:layout_marginLeft="200sp"
+        android:textColor="@android:color/white"
+        android:background="#2F4F4F"
+        />
+</RelativeLayout>

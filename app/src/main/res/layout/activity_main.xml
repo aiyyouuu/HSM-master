@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".View.MainActivity"
+    android:background="#ADD8E6">
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/date"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        />
+
+    <TextView
+        android:id="@+id/in"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/img"
+        android:textSize="15dp"
+        android:layout_marginLeft="40sp"
+        android:layout_marginTop="20sp"
+        android:textStyle="bold"
+        android:text="TEST"
+        android:textColor="#2F4F4F"/>
+
+    <TextView
+        android:id="@+id/nama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/in"
+        android:text="Choose your country!"
+        android:layout_marginTop="20dp"
+        android:textColor="#2F4F4F"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:layout_marginLeft="60dp"
+        android:layout_marginBottom="10dp"
+        />
+
+    <RadioGroup
+        android:id="@+id/rbGrup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nama"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="60dp">
+
+        <RadioButton
+            android:id="@+id/rdUS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/radio_us"
+            android:textColor="#2F4F4F"
+            android:textStyle="bold"
+            android:textSize="18sp"/>
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btn_cari"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rbGrup"
+        android:text="Search"
+        android:background="#2F4F4F"
+        android:textColor="@android:color/white"
+        android:layout_marginLeft="60sp"
+        android:layout_marginTop="20sp"
+        android:layout_toRightOf="@id/btn_back"
+        android:textSize="18sp"/>
+
+    <Button
+        android:id="@+id/btn_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rbGrup"
+        android:text="Back"
+        android:layout_marginLeft="60sp"
+        android:background="#2F4F4F"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="20sp"
+        android:textSize="18sp"/>
+
+</RelativeLayout>
