@@ -1,4 +1,4 @@
-package com.example.holiday.login;
+package com.example.holiday.Fragment;
 
 
 import android.content.Context;
@@ -36,7 +36,7 @@ public class Akun_Fragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        view = inflater.inflate(R.layout.fragment_akun_, container, false);
+        view = inflater.inflate(R.layout.fragment_akun, container, false);
         return view;
     }
 
@@ -46,7 +46,6 @@ public class Akun_Fragment extends Fragment {
         btnEdit = view.findViewById(R.id.edit);
         isi = view.findViewById(R.id.isie);
         nomor = view.findViewById(R.id.number);
-        userr = view.findViewById(R.id.nama);
         String name = getActivity().getIntent().getStringExtra("username");
         String text = name;
         userr.setText(text);

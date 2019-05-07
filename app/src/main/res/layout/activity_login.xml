@@ -1,21 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
     tools:context=".View.LoginActivity"
     android:gravity="center"
-    android:background="@color/colorPrimaryDark">
+    android:background="@android:color/black">
 
-    <LinearLayout
-        android:layout_width="match_parent"
+    <TextView
+        android:id="@+id/judul"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:text="LOGIN "
+        android:textColor="#CD5C5C"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:layout_marginLeft="70sp"/>
 
-        <ImageView
-            android:id="@+id/logo"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
 
         <EditText
             android:id="@+id/user_name"
@@ -25,7 +26,10 @@
             android:ems="10"
             android:inputType="textPersonName"
             android:hint="Username"
-
+            android:textColor="#CD5C5C"
+            android:textColorHint="#CD5C5C"
+            android:layout_below="@id/judul"
+            android:layout_marginTop="20dp"
             />
 
         <EditText
@@ -35,16 +39,23 @@
             android:layout_gravity="center_horizontal"
             android:ems="10"
             android:inputType="textPassword"
-            android:hint="Password" />
+            android:hint="Password"
+            android:layout_below="@id/user_name"
+            android:textColor="#CD5C5C"
+            android:textColorHint="#CD5C5C"/>
 
         <Button
             android:id="@+id/btn_login1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="60dp"
+            android:layout_marginLeft="20dp"
             android:text="Login"
-            android:background="#5E6464"
-            android:onClick="loginUser"/>
+            android:onClick="loginUser"
+            android:layout_below="@id/user_password"
+            android:background="@color/button"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"/>
 
         <Button
             android:id="@+id/btn_sign"
@@ -52,8 +63,12 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:text="Sign Up"
-            android:background="#5E6464"
+            android:background="@color/button"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:layout_below="@id/user_password"
+            android:layout_toRightOf="@id/btn_login1"
+            android:layout_marginLeft="10dp"
             android:layout_marginTop="10dp"/>
-    </LinearLayout>
 
-</LinearLayout>
+</RelativeLayout>

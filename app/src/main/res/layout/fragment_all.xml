@@ -4,13 +4,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Fragment.AllFragment"
-    android:background="#ADD8E6">
+    android:background="@android:color/black">
 
     <LinearLayout
         android:layout_width="320dp"
         android:layout_height="50dp"
-        android:background="#2F4F4F"
-        android:layout_marginTop="120dp"
+        android:background="@color/button"
+        android:layout_marginTop="200dp"
         android:layout_marginLeft="30dp"
         android:orientation="horizontal">
 
@@ -43,8 +43,8 @@
     <LinearLayout
         android:layout_width="320dp"
         android:layout_height="50dp"
-        android:background="#2F4F4F"
-        android:layout_marginTop="180dp"
+        android:background="@color/button"
+        android:layout_marginTop="260dp"
         android:layout_marginLeft="30dp"
         android:orientation="horizontal">
 
@@ -77,8 +77,8 @@
     <LinearLayout
         android:layout_width="320dp"
         android:layout_height="50dp"
-        android:background="#2F4F4F"
-        android:layout_marginTop="240dp"
+        android:background="@color/button"
+        android:layout_marginTop="320dp"
         android:layout_marginLeft="30dp"
         android:orientation="horizontal">
 
@@ -112,10 +112,10 @@
         android:id="@+id/btn_search"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="350dp"
+        android:layout_marginTop="450dp"
         android:text="Search!"
         android:textSize="20sp"
-        android:background="#2F4F4F"
+        android:background="@color/button"
         android:textColor="@android:color/white"
         android:paddingBottom="10dp"
         android:paddingTop="10dp"
