@@ -17,6 +17,7 @@
         <activity android:name=".View.TodayActivityUS" />
         <activity android:name=".ui.main.MainActivityDb" />
         <activity android:name=".View.SignUpActivity"/>
+        <activity android:name=".View.EditActivity"/>
         <activity android:name=".View.LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
