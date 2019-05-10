@@ -3,24 +3,27 @@ package com.example.holiday.Connection;
 import android.content.Context;
 import android.content.SharedPreferences;
 
+import com.example.holiday.Model.login.get_user.LoginResponse;
 import com.example.holiday.R;
 
-public class sharedpreference {
-    private SharedPreferences sharedPreferences;
+public class AddPreferences {
+    private android.content.SharedPreferences sharedPreferences;
     private Context context;
+    private LoginResponse loginResponse;
 
-    public sharedpreference(Context context){
+    public AddPreferences(Context context){
         this.context = context;
         sharedPreferences = context.getSharedPreferences(context.getResources().getString(R.string.login_preference), Context.MODE_PRIVATE);
     }
 
     public void writeLoginStatus(boolean status){
-        SharedPreferences.Editor editor = sharedPreferences.edit();
+        android.content.SharedPreferences.Editor editor = sharedPreferences.edit();
         editor.putBoolean(context.getResources().getString(R.string.login_status_preference), status);
+        editor.commit();
     }
 
     public void token(String token){
-        SharedPreferences.Editor editor = sharedPreferences.edit();
+        android.content.SharedPreferences.Editor editor = sharedPreferences.edit();
         editor.putString("Token", token);
         editor.commit();
     }
@@ -33,5 +36,12 @@ public class sharedpreference {
         boolean status = false ;
         status = sharedPreferences.getBoolean(context.getResources().getString(R.string.login_status_preference), false);
         return status;
+    }
+
+    public void logout(String token){
+        SharedPreferences.Editor editor = sharedPreferences.edit();
+        editor.putString("Token",token);
+        editor.clear();
+        editor.commit();
     }
 }

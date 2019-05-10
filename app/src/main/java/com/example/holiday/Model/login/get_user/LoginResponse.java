@@ -1,71 +1,26 @@
 package com.example.holiday.Model.login.get_user;
 
+import com.google.gson.annotations.SerializedName;
+
 public class LoginResponse{
-	private String updatedAt;
-	private int V;
-	private String name;
-	private String createdAt;
-	private String id;
-	private String email;
+	@SerializedName("name")
+	String nama;
+	@SerializedName("email")
+	String email;
 
-	public void setUpdatedAt(String updatedAt){
-		this.updatedAt = updatedAt;
+	public String getNama() {
+		return nama;
 	}
 
-	public String getUpdatedAt(){
-		return updatedAt;
+	public void setNama(String nama) {
+		this.nama = nama;
 	}
 
-	public void setV(int V){
-		this.V = V;
-	}
-
-	public int getV(){
-		return V;
-	}
-
-	public void setName(String name){
-		this.name = name;
-	}
-
-	public String getName(){
-		return name;
-	}
-
-	public void setCreatedAt(String createdAt){
-		this.createdAt = createdAt;
-	}
-
-	public String getCreatedAt(){
-		return createdAt;
-	}
-
-	public void setId(String id){
-		this.id = id;
-	}
-
-	public String getId(){
-		return id;
-	}
-
-	public void setEmail(String email){
-		this.email = email;
-	}
-
-	public String getEmail(){
+	public String getEmail() {
 		return email;
 	}
 
-	@Override
- 	public String toString(){
-		return 
-			"LoginResponse{" + 
-			"updated_at = '" + updatedAt + '\'' + 
-			",__v = '" + V + '\'' + 
-			",name = '" + name + '\'' + 
-			",created_at = '" + createdAt + '\'' + 
-			",_id = '" + id + '\'' + 
-			",email = '" + email + '\'' + 
-			"}";
-		}
+	public void setEmail(String email) {
+		this.email = email;
+	}
 }

@@ -8,14 +8,14 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import com.example.holiday.Connection.sharedpreference;
+import com.example.holiday.Connection.AddPreferences;
 import com.example.holiday.Model.login.postlogin.PostLoginResponse;
 import com.example.holiday.Presenter.LoginPresenter;
 import com.example.holiday.Presenter.LoginView;
 import com.example.holiday.R;
 
 public class LoginActivity extends AppCompatActivity implements LoginView {
-    private sharedpreference preferenceconfig;
+    private AddPreferences preferenceconfig;
     private EditText Username, UserPassword;
     private LoginPresenter loginPresenter;
     private Button btnSign;
@@ -26,7 +26,7 @@ public class LoginActivity extends AppCompatActivity implements LoginView {
         setContentView(R.layout.activity_login);
 
 
-        preferenceconfig = new sharedpreference(getApplicationContext());
+        preferenceconfig = new AddPreferences(getApplicationContext());
         Username = findViewById(R.id.user_name);
         UserPassword = findViewById(R.id.user_password);
         btnSign = findViewById(R.id.btn_sign);

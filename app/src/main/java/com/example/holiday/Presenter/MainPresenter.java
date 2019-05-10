@@ -17,8 +17,8 @@ public class MainPresenter {
         this.context = context;
         this.mainView = mainView;
     }
-    public void loadHoliday(String country, String year,  String month) {
-        BaseApp.service.getHoliday(country, year, month).enqueue(new Callback<HolidayResponse>() {
+    public void loadHoliday(String country, String year, String month) {
+        BaseApp.service.getHoliday(country,year, month).enqueue(new Callback<HolidayResponse>() {
             @Override
             public void onResponse(Call<HolidayResponse> call, Response<HolidayResponse> response) {
                 if (response.isSuccessful()) {

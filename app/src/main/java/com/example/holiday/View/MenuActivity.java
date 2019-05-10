@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.view.MenuItem;
 import android.widget.TextView;
 
+import com.example.holiday.Fragment.Akun_Fragment;
 import com.example.holiday.Fragment.AllFragment;
 import com.example.holiday.Fragment.MemoFragment;
 import com.example.holiday.R;
@@ -33,15 +34,18 @@ private boolean loadFragment(Fragment fragment){
         return false;
         }
 
-public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
-        switch (menuItem.getItemId()){
-        case R.id.menu2:
-        fragment = new AllFragment();
-        break;
-        case R.id.menu3:
-        fragment = new MemoFragment();
-        break;
-        }
-        return loadFragment(fragment);
+        public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
+                switch (menuItem.getItemId()){
+                case R.id.menu2:
+                        fragment = new AllFragment();
+                        break;
+                case R.id.menu3:
+                        fragment = new MemoFragment();
+                        break;
+                case R.id.menu4:
+                        fragment = new Akun_Fragment();
+                        break;
+                }
+                return loadFragment(fragment);
         }
 }

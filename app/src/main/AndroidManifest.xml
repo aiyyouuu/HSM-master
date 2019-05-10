@@ -7,13 +7,14 @@
     <application
         android:name=".Connection.BaseApp"
         android:allowBackup="true"
+        android:hardwareAccelerated="false"
+        android:largeHeap="true"
         android:icon="@mipmap/ic_launcher"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".View.MenuActivity" />
         <activity android:name=".View.TodayActivityUS" />
-        <activity android:name=".View.MainActivityRV" />
         <activity android:name=".ui.main.MainActivityDb" />
         <activity android:name=".View.SignUpActivity"/>
         <activity android:name=".View.LoginActivity">

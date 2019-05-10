@@ -4,6 +4,8 @@ import com.example.holiday.Model.login.get_user.LoginResponse;
 import com.example.holiday.Model.login.postlogin.PostLoginResponse;
 import com.example.holiday.Model.login.update.CreateResponse;
 
+import java.util.List;
+
 import retrofit2.Call;
 import retrofit2.http.Field;
 import retrofit2.http.FormUrlEncoded;
@@ -25,8 +27,9 @@ public interface ApiLogin {
                            @Field("name") String name);
 
     @GET("/users/")
-    Call<LoginResponse> getUser (@Header("x-access-token") String token);
+    Call<List<LoginResponse>> getUser (@Header("x-access-token") String token);
 
+    @FormUrlEncoded
     @PUT("/users/")
     Call<CreateResponse> updateUser (@Header("x-access-token") String token,
                                      @Field("name") String name);
