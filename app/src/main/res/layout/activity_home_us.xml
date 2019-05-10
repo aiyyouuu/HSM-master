@@ -9,7 +9,7 @@
     android:paddingRight="16dp"
     android:paddingTop="16dp"
     android:orientation="vertical"
-    android:background="#C0C0C0">
+    android:background="#CD5C5C">
 
     <FrameLayout
         android:id="@+id/container"
@@ -21,9 +21,9 @@
             android:id="@+id/tv"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="@string/radio_us"
+            android:text="Calendar"
             android:textStyle="bold"
-            android:textColor="@android:color/black"
+            android:textColor="@color/button"
             android:textSize="20dp"
             android:layout_marginTop="30sp"
             android:layout_marginBottom="15sp"/>
@@ -37,20 +37,20 @@
             app:mcv_showOtherDates="all"
             app:mcv_selectionColor="#CD5C5C"
             app:mcv_arrowColor="#CD5C5C"
-            android:layout_marginLeft="30dp"
+            android:layout_marginLeft="25dp"
             />
     </FrameLayout>
 
     <Button
         android:id="@+id/btn_next"
-        android:layout_width="wrap_content"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:text="ADD MEMO"
         android:textStyle="bold"
         android:layout_below="@id/container"
         android:layout_marginTop="60sp"
-        android:layout_marginLeft="200sp"
+        android:layout_centerHorizontal="true"
         android:textColor="@android:color/white"
-        android:background="@android:color/black"
+        android:background="@color/button"
         />
 </RelativeLayout>
