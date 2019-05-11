@@ -9,7 +9,7 @@
     android:paddingRight="16dp"
     android:paddingTop="16dp"
     android:orientation="vertical"
-    android:background="#CD5C5C">
+    android:background="@android:color/black">
 
     <FrameLayout
         android:id="@+id/container"
@@ -28,17 +28,25 @@
             android:layout_marginTop="30sp"
             android:layout_marginBottom="15sp"/>
 
+        <RelativeLayout
+            android:layout_width="330dp"
+            android:layout_height="330dp"
+            android:background="#FFB4E5"
+            android:layout_marginTop="100sp"
+            android:layout_gravity="center_horizontal">
+
         <com.prolificinteractive.materialcalendarview.MaterialCalendarView
             xmlns:app="http://schemas.android.com/apk/res-auto"
             android:id="@+id/calendarView"
             android:layout_width="300dp"
             android:layout_height="300dp"
-            android:layout_marginTop="100sp"
+            android:layout_centerHorizontal="true"
             app:mcv_showOtherDates="all"
-            app:mcv_selectionColor="#CD5C5C"
-            app:mcv_arrowColor="#CD5C5C"
-            android:layout_marginLeft="25dp"
+            app:mcv_selectionColor="@color/button"
+            app:mcv_arrowColor="@color/button"
+            android:layout_marginTop="7dp"
             />
+        </RelativeLayout>
     </FrameLayout>
 
     <Button

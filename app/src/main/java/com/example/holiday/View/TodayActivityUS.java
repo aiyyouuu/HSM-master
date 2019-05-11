@@ -34,7 +34,7 @@ public class TodayActivityUS extends AppCompatActivity {
 
         mCView.state().edit()
                 .setFirstDayOfWeek(Calendar.MONDAY)
-                .setMinimumDate(CalendarDay.from(1950,1,1))
+                .setMinimumDate(CalendarDay.from(1950,2,1))
                 .setMaximumDate(CalendarDay.from(2100, 12, 31))
                 .setCalendarDisplayMode(CalendarMode.MONTHS)
                 .commit();
