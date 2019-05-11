@@ -46,7 +46,6 @@ public class EditActivity extends AppCompatActivity implements UpdateView,GetUse
         });
     }
 
-
     public void updateUser(View view) {
         String username = nama.getText().toString();
         updatePresenter = new UpdatePresenter(getApplicationContext(), this);

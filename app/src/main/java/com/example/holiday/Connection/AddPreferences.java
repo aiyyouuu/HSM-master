@@ -7,8 +7,8 @@ import com.example.holiday.Model.login.get_user.LoginResponse;
 import com.example.holiday.R;
 
 public class AddPreferences {
-    private android.content.SharedPreferences sharedPreferences;
     private Context context;
+    private SharedPreferences sharedPreferences;
     private LoginResponse loginResponse;
 
     public AddPreferences(Context context){

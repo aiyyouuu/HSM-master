@@ -8,16 +8,17 @@
         android:name=".Connection.BaseApp"
         android:allowBackup="true"
         android:hardwareAccelerated="false"
-        android:largeHeap="true"
         android:icon="@mipmap/ic_launcher"
+        android:largeHeap="true"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".View.AlertDialogActivity"></activity>
         <activity android:name=".View.MenuActivity" />
         <activity android:name=".View.TodayActivityUS" />
         <activity android:name=".ui.main.MainActivityDb" />
-        <activity android:name=".View.SignUpActivity"/>
-        <activity android:name=".View.EditActivity"/>
+        <activity android:name=".View.SignUpActivity" />
+        <activity android:name=".View.EditActivity" />
         <activity android:name=".View.LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
